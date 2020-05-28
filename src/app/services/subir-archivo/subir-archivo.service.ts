@@ -22,10 +22,10 @@ export class SubirArchivoService {
         if (xhr.readyState === 4){
           if (xhr.status === 200){
             console.log('Imagen subida');
-            //resolve( JSON.parse(xhr.response) );
+            resolve( JSON.parse(xhr.response) );
           } else{
             console.log('Fallo la subida');
-            //rejects( xhr.response );
+            rejects( xhr.response );
           }
         }
       };

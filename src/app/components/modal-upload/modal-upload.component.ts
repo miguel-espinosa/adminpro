@@ -59,7 +59,7 @@ export class ModalUploadComponent implements OnInit {
 
             this._modalUploadService.notificacion.emit( resp );
             this.cerrarModal();
-
+            console.log('Se llamo a cerra modal');
           })
           .catch( err => {
             console.log( 'Error en la carga... ');
